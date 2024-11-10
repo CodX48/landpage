@@ -1,5 +1,5 @@
 import {main_cont_tips} from "./simple_exarsice._module.js"
-
+import {photos} from "./photos.js"
 let home_docs = document.createElement('div');
 let header = document.getElementById(`header`);
 let doc_C_overall = document.createElement('div') //here i add the div that contains overall about what is calisthanics
@@ -66,4 +66,6 @@ top_products.appendChild(card_cont)
 home_docs.after(main_cont_tips)
 
 main_cont_tips.after(top_products)
+
+top_products.after(photos)
 

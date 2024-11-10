@@ -10,6 +10,7 @@ main_cont_tips.appendChild(tip_mess);
 
 //main_tutorial
 let main_tutorial = document.createElement('div');
+main_tutorial.className = "Main-QuickStart"
 img_urls.forEach(ele => {
     let tip = document.createElement('div');
     tip.className = "Quick-tip"

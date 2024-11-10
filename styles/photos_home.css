@@ -1,0 +1,11 @@
+.photo-list{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    width: 100%;
+}
+.photo-list img{
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}

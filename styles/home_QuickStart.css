@@ -6,8 +6,11 @@
     margin: auto;
     margin-top: 50px;
     padding: 50px;
-    width:70%;
-    
+    width:90%;
+    border-bottom: 1px solid;
+}
+.Main-QuickStart{
+    width: 70%;
 }
 
 .Quick-tip{
