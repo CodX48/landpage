@@ -1,3 +1,5 @@
+import {main_cont_tips} from "./simple_exarsice._module.js"
+
 let home_docs = document.createElement('div');
 let header = document.getElementById(`header`);
 let doc_C_overall = document.createElement('div') //here i add the div that contains overall about what is calisthanics
@@ -14,53 +16,54 @@ header.after(home_docs);
 
 
 class product{
-
-    constructor(name, price, description, image){
-        this.name = name || "Unknown";
-        this.price = price || `${100} $`;
-        this.description = description || "Unknown";
-        this.image = image = "https://gravity.fitness/cdn/shop/products/001-GravityFitnessParallettes2023.jpg?v=1679909747&width=512";
+     
+    constructor(image_num){
+        this.image  = image_num;
         }
+
+    urls() {
+        let url = ['https://cdn1.lacertosus.com/5087-thickbox_default/adjustable-pull-up-bar-pro-outdoor.webp',"https://www.gornation.com/cdn/shop/files/1-gornation-dip-bas.jpg?v=1693390362","https://gravity.fitness/cdn/shop/products/001-GravityFitnessParallettes2023.jpg?v=1679909747&width=2048","https://thetibbarguy.com/cdn/shop/files/2023-04-20_TibBarGuy_Product_0053Large.jpg?v=1691156855&width=2048"]
+        return url[this.image]
+    }
 }
+
 
 //top products
 let top_products = document.createElement('div');
 top_products.className = "top-products";
+let product_title = document.createElement("h1")
+product_title.className = "head-mess"
+product_title.textContent = "Most Selling"
+top_products.appendChild(product_title)
+
+let card_cont = document.createElement("div")
+card_cont.className = "card-cont";
 
 for(let i =0 ;i<4;i++){
     let card = document.createElement('div');
     card.className = "card";
+    card.id = "card"
+    let more = document.createElement('h3')
+    more.textContent = "More"
+
+    card.addEventListener("mouseover", (ele) =>{
+    more.style.bottom = "30px"
+    })
+    card.addEventListener("mouseleave", (ele) =>{
+    more.style.bottom = "-70px"
+    })
+
+    card.appendChild(more)
     let img_div =document.createElement('div');
     img_div.className = "img-div"
     let img = document.createElement('img');
-    img.src = new product().image;
+    img.src = new product(i).urls();
     img_div.appendChild(img);
-    let name = document.createElement('h2');
-    name.textContent = new product().name;
-    let color_size_cont = document.createElement('div');
-    color_size_cont.className = "color-size-cont";
-    let color = document.createElement('span');
-    let size = document.createElement('span');
-    color.textContent = "Black";
-    size.textContent = "M / L / XL";
-    color_size_cont.appendChild(color);
-    color_size_cont.appendChild(size);
-    let price = document.createElement('span');
-    price.textContent = new product().price;
-    let add_to_cart = document.createElement('button');
-    let price_add_btn = document.createElement('div');
-    price_add_btn.className = "price-add-btn";
-    price_add_btn.appendChild(price);
-    price_add_btn.appendChild(add_to_cart);
-    add_to_cart.textContent = "Add to Cart";
-    let bot_card =  document.createElement('div');
-    bot_card.className = "bot-card";
-
     card.appendChild(img_div);
-    bot_card.appendChild(name);
-    bot_card.appendChild(color_size_cont);
-    bot_card.appendChild(price_add_btn);
-    card.appendChild(bot_card);
-    top_products.appendChild(card);
+    card_cont.appendChild(card);
 }
-home_docs.after(top_products)
+top_products.appendChild(card_cont)
+home_docs.after(main_cont_tips)
+
+main_cont_tips.after(top_products)
+

@@ -1,0 +1,37 @@
+.main-cont-tips{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+    width:70%;
+    
+}
+
+.Quick-tip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    border: 2px solid rgb(151, 151, 151);
+    border-radius: 5px;
+    margin: 50px;
+    background-color: #18122B;
+}
+
+.Quick-tip img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 1px solid rgb(83, 85, 186);
+    box-shadow: 0px 0px 70px rgba(255, 255, 255, 0.167);
+}
+
+.Quick-tip p{
+    font-size: 20px;
+    font-weight: 600;
+    width: 50%;
+    margin-right: 50px;
+}
