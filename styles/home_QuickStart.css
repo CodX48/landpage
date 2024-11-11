@@ -11,6 +11,13 @@
 }
 .Main-QuickStart{
     width: 70%;
+    border: 2px solid rgb(151, 151, 151);
+    background-color: #18122B;
+}
+
+.head-mess{
+    margin-bottom: 50px;
+
 }
 
 .Quick-tip{
@@ -18,10 +25,8 @@
     justify-content: center;
     align-items: center;
     padding: 30px 0px;
-    border: 2px solid rgb(151, 151, 151);
     border-radius: 5px;
-    margin: 50px;
-    background-color: #18122B;
+    margin: 70px;
 }
 
 .Quick-tip img{
@@ -29,7 +34,7 @@
     height: 350px;
     object-fit: cover;
     border: 1px solid rgb(83, 85, 186);
-    box-shadow: 0px 0px 70px rgba(255, 255, 255, 0.167);
+    box-shadow: 0px 0px 70px rgba(255, 255, 255, 0.242);
 }
 
 .Quick-tip p{

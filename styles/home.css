@@ -9,7 +9,9 @@
  }
  body{
     background-image: linear-gradient(to bottom,  #8278a5,#18122B);
-
+ }
+ html{
+    scroll-behavior: smooth;
  }
 
 .header{
@@ -34,7 +36,7 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    border-bottom: 1px solid;
+    
 }
 .text-category-btn{
     display: flex;
@@ -69,7 +71,7 @@
 .comment{
     font-size: 18px;
     font-weight: 500;
-    color: rgb(146, 146, 146);
+    color: rgb(220, 220, 220);
 }
 .TopHeader{
     width: 100%;
@@ -85,6 +87,9 @@
     padding: 7px 15px;
     border-radius: 10px;
     cursor: pointer;
+}
+.subscrabtion-btn a{
+    text-decoration: none;
 }
 .doc-C-overall{
     margin: 50px;
@@ -141,6 +146,7 @@
     margin-top: 120px;
     cursor: pointer;
     transition: 0.3s ease-in;
+    box-shadow: 0px 0px 50px rgba(245, 222, 179, 0.296);
 }
 
 .card h3{

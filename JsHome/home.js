@@ -1,7 +1,9 @@
 import {main_cont_tips} from "./simple_exarsice._module.js"
 import {photos} from "./photos.js"
+import { nav,main_home } from "./header_nav.js";
 let home_docs = document.createElement('div');
 let header = document.getElementById(`header`);
+header.innerHTML =`${nav}${main_home}`
 let doc_C_overall = document.createElement('div') //here i add the div that contains overall about what is calisthanics
 doc_C_overall.className = "doc-C-overall";
 let main = document.createElement('h1');
