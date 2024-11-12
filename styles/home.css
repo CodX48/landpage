@@ -9,6 +9,7 @@
  }
  body{
     background-image: linear-gradient(to bottom,  #8278a5,#18122B);
+    background-repeat: no-repeat;
  }
  html{
     scroll-behavior: smooth;
@@ -31,12 +32,19 @@
     align-items: center;
 }
 .nav-bar a{
+   
+    text-decoration: none;
+    
+}
+.nav-bar a p{
     padding: 10px;
     margin: 0px 10px;
-    text-decoration: none;
     font-size: 16px;
-    font-weight: 500;
-    
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+.nav-bar a:hover p{
+    color: #2f2551;
 }
 .text-category-btn{
     display: flex;
@@ -148,8 +156,13 @@
     transition: 0.3s ease-in;
     box-shadow: 0px 0px 50px rgba(245, 222, 179, 0.296);
 }
+.card a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.card h3{
+.card a h3{
     bottom: -70px;
     font-size: 20px;
     font-weight: 600;

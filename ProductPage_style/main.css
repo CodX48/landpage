@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Global Styles */
+#rooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;     
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;
+    color: rgb(52, 52, 52);
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar a{
+    padding: 10px;
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.TopHeader{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscrabtion-btn{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    background-color:  rgb(73, 73, 73);
+    padding: 7px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.subscrabtion-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.search{
+font-size: 16px;
+font-weight: 600;
+margin: auto;
+width: 50%;
+padding: 10px;
+border-radius: 10px;
+outline: none;
+border: 3px solid #5a5667;
+margin-top: 50px;
+transition: 0.5s ease;
+}
+.search:focus{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.115);
+}

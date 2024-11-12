@@ -45,9 +45,12 @@ for(let i =0 ;i<4;i++){
     let card = document.createElement('div');
     card.className = "card";
     card.id = "card"
+    let a = document.createElement('a')
+    a.href = "ProductPage.html"
+    a.target = 'blank_'
     let more = document.createElement('h3')
     more.textContent = "More"
-
+    a.appendChild(more)
     card.addEventListener("mouseover", (ele) =>{
     more.style.bottom = "30px"
     })
@@ -55,7 +58,7 @@ for(let i =0 ;i<4;i++){
     more.style.bottom = "-70px"
     })
 
-    card.appendChild(more)
+    card.appendChild(a)
     let img_div =document.createElement('div');
     img_div.className = "img-div"
     let img = document.createElement('img');
@@ -70,4 +73,5 @@ home_docs.after(main_cont_tips)
 main_cont_tips.after(top_products)
 
 top_products.after(photos)
+
 

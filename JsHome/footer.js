@@ -62,3 +62,4 @@ let footer =
 
 document.getElementById(`footer-cont`).innerHTML = footer;
 
+
