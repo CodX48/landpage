@@ -4,7 +4,7 @@ let nav =
 <div class="nav-bar">
     <a href="index.html"><p>Home</p></a>
     <a href="#"><p>Docs</p></a>
-    <a href="#"><p>Tutoriel</p></a>
+    <a href="tutorial.html"><p>Tutoriel</p></a>
     <a href="ProductPage.html" target="_blank"><p>Prodects</p></a>
     <a href="#"><p>Category</p></a>
 </div>

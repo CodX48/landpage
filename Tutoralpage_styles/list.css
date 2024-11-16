@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+ 
+.app{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+ #Header{
+    width: 100%;
+    padding: 18px;
+    background-color: #403862d7;
+}
+
+.TopHeader{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+.nav-bar a p{
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+.nav-bar a:hover p{
+    color: #39334b;
+    
+}
+
+.subscrabtion-btn{
+    display: none;
+   
+}
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 50px;
+}
+
+.list-container{
+    width:fit-content;
+    position:sticky;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+
+.app .list-container ul{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d8d4e9;
+    padding: 5px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.app .list-container ul li{
+    border-radius: 10px;
+    width: 100%;
+    color: #403862;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.app .list-container ul li:hover{
+    background-color: #9386cb51;
+}
+
+.app .list-container ul li:hover p{
+    text-shadow: 5px 5px 50px #9386cb51;
+}
+.content-container{
+    width: 70%;
+    height: fit-content;
+    color: #221c3c;
+    background-color: #eaeaea;
+    padding: 50px;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.content-container p {
+    margin: 20px 0px;
+    font-size:18px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    font-weight: 500;
+}
+
+.content-container h2{
+    margin-top: 50px;
+}
