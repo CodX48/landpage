@@ -19,7 +19,7 @@ document.getElementById('search').addEventListener('input', (ele) => {
 });
 
 
-let i = document.querySelectorAll('i');
+let i = document.querySelectorAll('.product-content i');
 i.forEach(ele =>{
     let test = false;
 ele.addEventListener('click', ()=>{
@@ -32,3 +32,16 @@ ele.addEventListener('click', ()=>{
     }
 })
 })
+let shopping_cart = document.getElementById('add_pr');
+shopping_cart.setAttribute('count',0);
+let product = document.querySelectorAll('#add_product')
+
+product.forEach( e=>{
+    e.addEventListener('click', ele =>{
+        let count = parseInt(shopping_cart.getAttribute('count'));
+        count++;
+        shopping_cart.setAttribute('count',count);
+        ele.preventDefault();
+    })
+})
+

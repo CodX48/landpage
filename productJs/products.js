@@ -103,7 +103,7 @@ let productContainer = `<ul class="product-contaner" id="product-contaner">`
 calisthenicsTools.forEach(ele => {
     let card =
     `<li class="product-card">
-        <div class="product-content">
+        <div class="product-content" id="product-content">
         <i class="far fa-heart love-icon"></i>
             <img src="${ele.img}" alt="${ele.name}"/>
             <div class="product_info">
@@ -112,7 +112,7 @@ calisthenicsTools.forEach(ele => {
                 <div class="price_add">
                     <span>Price<br>$${ele.price}</span>
                     <form action="">
-                        <input type="submit" name="add_product" value="Add"/>
+                        <input id = "add_product" type="submit" name="add_product" value="Add"/>
                     </form>
                 </div>
             </div>

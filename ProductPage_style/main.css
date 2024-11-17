@@ -12,7 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:  'Poppins', sans-serif;
-    color: rgb(52, 52, 52);
+    
  }
  html{
     scroll-behavior: smooth;
@@ -24,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 200px;
+    padding: 100px;
 }
 
 .nav-bar{
@@ -38,42 +38,72 @@
     padding: 10px;
     margin: 0px 10px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
+    color: #ffffff;
+}
+
+.nav-bar a:hover p{
+    color: #39334b;
     
 }
+
 .TopHeader{
     padding: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #403862d7;
+    
 }
 .subscrabtion-btn{
-    color: white;
+    display: none;
+}
+.search-Shopping{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    width: 200px;
-    background-color:  rgb(73, 73, 73);
-    padding: 7px 15px;
-    border-radius: 10px;
+    align-items: center;
+}
+.search-Shopping i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px;
+    background-color: rgb(233, 233, 233);
+    color: #3f3951;
+    border-radius: 50%;
+    border: 1px solid;
     cursor: pointer;
 }
-.subscrabtion-btn a{
-    color: white;
-    text-decoration: none;
+.search-Shopping i::after{
+content:attr(count);
+font-size: 13px;
+font-weight: 600;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+background-color: #ffffff;
+padding: 10px;
+border-radius: 100px;
+top:-10px;
+right: -12px;
+color: rgb(57, 57, 57);
 }
-
 .search{
 font-size: 16px;
 font-weight: 600;
-margin: auto;
 width: 50%;
 padding: 10px;
 border-radius: 10px;
 outline: none;
 border: 3px solid #5a5667;
-margin-top: 50px;
+margin-right: 100px;
 transition: 0.5s ease;
 }
 .search:focus{
