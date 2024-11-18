@@ -14,14 +14,23 @@
 .container{
    display: flex;
    justify-content: center;
-   width: 80%;
+   width: 90%;
    margin: auto;
    padding: 50px;
 }
+a{
+   color: #585467;
+   text-decoration: none;
+}
 
 .list{
+   margin-top: 50px;
+   position:sticky;
+   top: 50px;
+   height: auto;
    margin-right: 50px;
-   padding: 50px;
+   padding: 10px;
+   height: 100%;
 }
 .list ul{
    padding: 10px 0px;
@@ -39,13 +48,13 @@
    transition: 0.5s ease;
 }
 
-.list ul li.active{
+.list ul li.active a{
    color: #18122B;
 }
 
 .list ul li:hover{
-   background-color: #ededed61;
-   color: #18122B;
+   background-color: #ededed81;
+   color: #0a051a;
 }
 
 .list ul::before{
@@ -58,9 +67,9 @@
    background-color: #ccc;
    z-index: -1;
 }
-ul li.active,
-ul li:hover {
-  background-color: #ededed61;
+.list ul li.active,
+.list ul li:hover {
+  background-color: #ededed81;
 }
 #doc_footer{
    background-image: linear-gradient(to bottom,  #8278a5,#18122B);
@@ -68,5 +77,89 @@ ul li:hover {
    color: white;
 }
 
-/* here i will add the style for the content
+/* here i will add the style for the content */
 
+.content{
+   margin-top: 50px;
+   border-left: 3px solid #939393;
+   padding-left: 50px;
+}
+
+.content div{
+   padding: 20px;
+   margin-bottom: 50px;
+}
+
+.header{
+   font-size: 30px;
+}
+.tip{
+   margin-top: 10px;
+}
+.content div p{
+   color: #303030;
+   font-size: 18px;
+}
+.content ul{
+   width: 90%;
+   margin-top: 20px;
+   margin-left: 50px;
+}
+
+.content ul li{
+   margin: 10px;
+}
+
+.TopHeader{
+   padding: 10px;
+   width: 100%;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   background-color: #403862d7;
+}
+.nav-bar{
+   width: 100%;
+   display: flex;
+   justify-content:flex-end;
+   justify-content: center;
+   align-items: center;
+}
+.nav-bar a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   color: white;
+}
+.nav-bar a i{
+   transform: rotate(-45deg);
+   transition: 0.2s ease;
+}
+.nav-bar a p{
+   padding: 10px;
+   margin: 0px 10px;
+   font-size: 16px;
+   font-weight: 600;
+   transition: 0.2s ease;
+}
+.nav-bar a:hover p, .nav-bar a:hover i{
+   color: #39334b;
+}
+.nav-bar a:hover i{
+   transform: rotate(0deg);
+}
+
+.subscrabtion-btn{
+   display: flex;
+   justify-content: center;
+   width: 200px;
+   background-color:  rgb(73, 73, 73);
+   padding: 7px 15px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.subscrabtion-btn a{
+   color: white;
+   text-decoration: none;
+}

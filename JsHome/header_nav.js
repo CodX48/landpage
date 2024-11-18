@@ -3,7 +3,7 @@ let nav =
 <div class="TopHeader" id="TopHeader">
 <div class="nav-bar">
     <a href="index.html"><p>Home</p></a>
-    <a href="#"><p>Docs</p></a>
+    <a href="doc.html"><p>Docs</p></a>
     <a href="tutorial.html"><p>Tutoriel</p></a>
     <a href="ProductPage.html" target="_blank"><p>Prodects</p></a>
     <a href="#"><p>Category</p><i class="fas fa-arrow-down"></i></a>
