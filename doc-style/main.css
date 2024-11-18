@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;
+}
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+.container{
+   display: flex;
+   justify-content: center;
+   width: 80%;
+   margin: auto;
+   padding: 50px;
+}
+
+.list{
+   margin-right: 50px;
+   padding: 50px;
+}
+.list ul{
+   padding: 10px 0px;
+   position: relative;
+   list-style: none;
+}
+.list ul li{
+   font-size: 16px;
+   color: #585467;
+   width: 300px;
+   margin: 10px;
+   cursor: pointer;
+   padding: 10px 30px;
+   border-radius: 10px;
+   transition: 0.5s ease;
+}
+
+.list ul li.active{
+   color: #18122B;
+}
+
+.list ul li:hover{
+   background-color: #ededed61;
+   color: #18122B;
+}
+
+.list ul::before{
+   content: '';
+   position: absolute;
+   width: 1.5px;
+   left: 20px; 
+   top: 0;
+   bottom: 0;
+   background-color: #ccc;
+   z-index: -1;
+}
+ul li.active,
+ul li:hover {
+  background-color: #ededed61;
+}
+#doc_footer{
+   background-image: linear-gradient(to bottom,  #8278a5,#18122B);
+   background-repeat: no-repeat;
+   color: white;
+}
+
+/* here i will add the style for the content
+

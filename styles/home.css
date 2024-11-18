@@ -32,7 +32,16 @@
     align-items: center;
 }
 .nav-bar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+}
+.nav-bar i{
+    display: inline-block;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transition: 0.2s ease;
 }
 .nav-bar a p{
     padding: 10px;
@@ -43,6 +52,11 @@
 }
 .nav-bar a:hover p{
     color: #2f2551;
+}
+.nav-bar a:hover  i{
+    color: #2f2551;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
 }
 .text-category-btn{
     display: flex;

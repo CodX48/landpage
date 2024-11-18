@@ -47,6 +47,9 @@
     color: #39334b;
     
 }
+.nav-bar i{
+    display: none;
+}
 
 .TopHeader{
     padding: 20px;

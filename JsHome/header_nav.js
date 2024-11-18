@@ -6,7 +6,7 @@ let nav =
     <a href="#"><p>Docs</p></a>
     <a href="tutorial.html"><p>Tutoriel</p></a>
     <a href="ProductPage.html" target="_blank"><p>Prodects</p></a>
-    <a href="#"><p>Category</p></a>
+    <a href="#"><p>Category</p><i class="fas fa-arrow-down"></i></a>
 </div>
 
 <div class="subscrabtion-btn">

@@ -59,7 +59,4 @@ let footer =
     </div>
 </div>
 `
-
-document.getElementById(`footer-cont`).innerHTML = footer;
-
-
+export {footer}

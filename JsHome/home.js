@@ -1,6 +1,7 @@
 import {main_cont_tips} from "./simple_exarsice._module.js"
 import {photos} from "./photos.js"
 import { nav,main_home } from "./header_nav.js";
+import { footer } from "./footer.js";
 let home_docs = document.createElement('div');
 let header = document.getElementById(`header`);
 header.innerHTML =`${nav}${main_home}`
@@ -73,5 +74,7 @@ home_docs.after(main_cont_tips)
 main_cont_tips.after(top_products)
 
 top_products.after(photos)
+
+document.getElementById('footer-cont').innerHTML = footer;
 
 
