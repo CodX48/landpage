@@ -10,7 +10,6 @@
  html{
     scroll-behavior: smooth;
  }
-
 .container{
    display: flex;
    justify-content: center;
@@ -50,6 +49,11 @@ a{
 
 .list ul li.active a{
    color: #18122B;
+}
+
+.active{
+   color: #18122B;
+   background-color: #ededed81;
 }
 
 .list ul li:hover{
